@@ -27,7 +27,7 @@
    - Откройте «Настройка DenyList», выделите галочкой приложение Сервисы Google Play, нажмите на аватарку этого приложения и включите все переключатели. Тоже самое сделайте с приложением WhatsApp либо WhatsApp Business.
    - Вернитесь в «Настройки» и нажмите на «Скрытие приложения Magisk». Измените название приложения на любое, кроме «Magisk»
 - **1.2. Установка необходимых модулей:**
-   - Устоновите себе на устройство данные модули: [`Zygisk Next`](https://github.com/Dr-TSNG/ZygiskNext/releases)/[`LSPosed v1.10.1`](https://github.com/JingMatrix/LSPosed/releases)/[`Play Integrity Fix`](https://mmrl.dev/repository/aptoftisk/playintegrityfix)/[`TrickyStore`](https://github.com/5ec1cff/TrickyStore/releases)/[`TrickyAddon`](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/tag/v3.9)/[`Shamiko`](https://github.com/LSPosed/LSPosed.github.io/releases)
+   - Загружаете себе на устройство данные модули: [`Zygisk Next`](https://github.com/Dr-TSNG/ZygiskNext/releases)/[`LSPosed v1.10.1`](https://github.com/JingMatrix/LSPosed/releases)/[`Play Integrity Fix`](https://mmrl.dev/repository/aptoftisk/playintegrityfix)/[`TrickyStore`](https://github.com/5ec1cff/TrickyStore/releases)/[`TrickyAddon`](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/tag/v3.9)/[`Shamiko`](https://github.com/LSPosed/LSPosed.github.io/releases)
    - Вернитесь на «главную страницу» Magisk Manager.
    - Перейдите в раздел «Модули» и выберите «Установить из хранилища».
    - Выберите и устоновите модули, которые нужно было загрузить себе на устройство.
@@ -38,8 +38,10 @@
    - Перейдите в раздел «Модули»
    - Найдите модуль «Play Integrity Fix» и нажмите кнопку «Action» под модулем. Немного подождите, затем нажмите на кнопку «Close» в правом нижнем углу.
    - Найдите модуль «Tricky Store» и нажмите кнопку «Action» под модулем. Дожитесь загрузки WebUI и дайте открывшемуся приложению доступ к правам суперпользователя.
-   - В открывшемся приложении открываете меню (три полоски в правом верхнем углу) и выберите «Выбрать все». Затем нажмите синюю кнопку «Сохранить».
+   - В открывшемся приложении откройте меню (три полоски в правом верхнем углу) и выберите «Выбрать все». Затем нажмите синюю кнопку «Сохранить».
    - После нажатия кнопки «Сохранить» опять открываете меню, выбераете «Устоновить Security Patch».
-   - В открывшемся окне ставите галочку на параметр «Расширенный». В пункте «System» пишите «prop». В пункте «Boot» пишите дату «2025-05-05». В пункте «Vendor» пишите дату «2025-05-05». Затем жмёте на кнопку «Сохранить».
-   - Затем загружаете себе на устройство данный файл: [`keybox.zip`](https://github.com/user-attachments/files/20700522/keybox.zip) и извлекаете содержимое архива в любую папку.
+   - В открывшемся окне поставьте галочку на параметр «Расширенный». В пункте «System» пишите «prop». В пункте «Boot» пишите дату «2025-05-05». В пункте «Vendor» пишите дату «2025-05-05». Затем жмёте на кнопку «Сохранить».
+   - Загружаете себе на устройство данный файл: [`keybox.zip`](https://github.com/user-attachments/files/20700522/keybox.zip) и извлекаете содержимое архива в любую папку.
   После этого зозвращаетесь в приложение Tricky Addon, откройте меню и выбераете «Устоновить пользовательский Keybox». Выбераете ранее извлечённый вами файл с названием «keybox.xml»
+- **2.2. Настройка необходимых приложений:**
+   - Загружаете себе на устройство приложение: [`Play Integrity API Checker `](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck). Открываете его, 
