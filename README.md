@@ -27,7 +27,7 @@
    - Откройте «Настройка DenyList», выделите галочкой приложение Сервисы Google Play, нажмите на аватарку этого приложения и включите все переключатели. Тоже самое сделайте с приложением WhatsApp либо WhatsApp Business.
    - Вернитесь в «Настройки» и нажмите на «Скрытие приложения Magisk». Измените название приложения на любое, кроме «Magisk»
 - **1.2. Установка необходимых модулей:**
-   - Устоновите себе на устройство данные модули: [`Zygisk Next` ](https://github.com/Dr-TSNG/ZygiskNext/releases) [`LSPosed v1.10.1`](https://github.com/JingMatrix/LSPosed/releases) [`Play Integrity Fix`](https://mmrl.dev/repository/aptoftisk/playintegrityfix) [`TrickyStore`](https://github.com/5ec1cff/TrickyStore/releases) [`TrickyAddon`](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/tag/v3.9) [`Shamiko`](https://github.com/LSPosed/LSPosed.github.io/releases)
+   - Устоновите себе на устройство данные модули: [`Zygisk Next` ](https://github.com/Dr-TSNG/ZygiskNext/releases)/[`LSPosed v1.10.1`](https://github.com/JingMatrix/LSPosed/releases)/[`Play Integrity Fix`](https://mmrl.dev/repository/aptoftisk/playintegrityfix)/[`TrickyStore`](https://github.com/5ec1cff/TrickyStore/releases)/[`TrickyAddon`](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/tag/v3.9)/[`Shamiko`](https://github.com/LSPosed/LSPosed.github.io/releases)
    - Вернитесь на «главную страницу» Magisk Manager.
    - Перейдите в раздел «Модули» и выберите «Установить из хранилища».
    - Выберите и устоновите модули, которые нужно было загрузить себе на устройство.
