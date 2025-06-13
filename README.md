@@ -64,6 +64,6 @@
    - Загрузите себе на устройство приложение: [`Play Integrity API Checker`](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck). Откройте его, нажмите «CHECK»
    - Если вы всё сдалали правильно, то после завершения проверки должен быть вот такой результат:
   
-  ✅ MEETS_BASIC_INTEGRITY  
+  `✅ MEETS_BASIC_INTEGRITY  
   ✅ MEETS_DEVICE_INTEGRITY  
-  ✅ MEETS_STRONG_INTEGRITY
+  ✅ MEETS_STRONG_INTEGRITY`
