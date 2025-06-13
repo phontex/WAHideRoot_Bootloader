@@ -63,6 +63,7 @@
    - После этого зайдите в приложение Key Attestation, откройте меню (три полоски в правом верхнем углу) и выберите «Load from file». Выберите ранее извлечённый вами файл с названием «treble_arm64_bgN-KeyAttestation.p7b»
    - Загрузите себе на устройство приложение: [`Play Integrity API Checker`](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck). Откройте его, нажмите «CHECK»
    - Если вы всё сдалали правильно, то после завершения проверки должен быть вот такой результат:
+  
   ✅ MEETS_BASIC_INTEGRITY  
   ✅ MEETS_DEVICE_INTEGRITY  
   ✅ MEETS_STRONG_INTEGRITY
