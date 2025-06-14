@@ -61,12 +61,18 @@
    - Загрузите файл: [`keybox.zip`](https://github.com/user-attachments/files/20700522/keybox.zip) и распакуйте его содержимое
    - В приложении Tricky Addon откройте меню и выберите «Установить пользовательский Keybox», затем выберите файл «keybox.xml»
 
-- **2.2. Проверка работы:**
-   - Установите приложение [`Play Integrity API Checker`](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)
+- **2.2. Настройка необходимых приложений:**
+   - Загрузите на устройство файл: [treble_arm64_bgN-KeyAttestation.zip](https://github.com/user-attachments/files/20734091/treble_arm64_bgN-KeyAttestation.zip)
+   - Распакуйте содержимое архива в любую папку
+   - Установите приложение: [Key Attestation](https://github.com/vvb2060/KeyAttestation/releases)
+   - В приложении Key Attestation:
+     1. Откройте меню (три точки в правом верхнем углу)
+     2. Выберите «Load from file»
+     3. Укажите распакованный файл «treble_arm64_bgN-KeyAttestation.p7b»
+   - Установите [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)
    - Запустите проверку (кнопка «CHECK»)
-   - При правильной настройке вы увидите:
-     ```
-     ✅ MEETS_BASIC_INTEGRITY  
-     ✅ MEETS_DEVICE_INTEGRITY  
-     ✅ MEETS_STRONG_INTEGRITY
-     ```
+
+   **Ожидаемый результат:**
+✅ MEETS_BASIC_INTEGRITY
+✅ MEETS_DEVICE_INTEGRITY
+✅ MEETS_STRONG_INTEGRITY
