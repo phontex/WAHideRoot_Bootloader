@@ -77,6 +77,8 @@
 ✅ MEETS_DEVICE_INTEGRITY
 ✅ MEETS_STRONG_INTEGRITY
 
+---
+
 ### ⚠️ Важные ограничения метода
 
 1. **Обновление WhatsApp**:
