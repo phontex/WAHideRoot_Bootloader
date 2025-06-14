@@ -1,115 +1,115 @@
 # WAHideRoot+Bootloader
-<a id="начало"></a>
-Инструкция по скрытию состояния загрузчика и наличия Root-прав от WhatsApp. На данный момент данная инструкция предназначена только для корневого менеджера Magisk.
-В процессе разработки:
-1. Инструкция по скрытию состояния загрузчика и наличия Root-прав от WhatsApp и WhatsApp Business для корневого менеджера KernelSU.
-2. Инструкция по скрытию состояния загрузчика и наличия Root-прав от WhatsApp Business.
+<a id="开始"></a>
+隐藏引导加载程序状态和Root权限的WhatsApp指南。目前本指南仅适用于Magisk root管理器。
+开发中：
+1. 适用于KernelSU的WhatsApp和WhatsApp Business隐藏指南
+2. 适用于WhatsApp Business的隐藏指南
+
+--- 
+
+## 📌 **目录**  
+[要求](#要求)  
+1. [安装](#安装)  
+   - 1.1 [修改Magisk设置](#修改Magisk设置)  
+   - 1.2 [安装模块](#安装模块)  
+2. [配置](#配置)  
+   - 2.1 [模块配置](#模块配置)  
+   - 2.2 [应用配置](#应用配置)
+
+[方法限制](#方法限制)  
 
 ---
 
-## 📌 **Оглавление**  
-[Требования](#требования)  
-1. [Установка](#установка)  
-   - 1.1 [Изменение настроек Magisk](#изменение-настроек-magisk)  
-   - 1.2 [Установка модулей](#установка-модулей)  
-2. [Настройка](#настройка)  
-   - 2.1 [Настройка модулей](#настройка-модулей)  
-   - 2.2 [Настройка приложений](#настройка-приложений)
-
-[Ограничения метода](#ограничения)  
+<a id="要求"></a>
+## 📋 **要求**  
+- Magisk：您的设备必须已安装Magisk
+- Root权限：此方法需要root权限  
+- WhatsApp：WhatsApp版本不得高于2.25.6.71
+    - 必须下载此版本：[`WhatsApp Messenger 2.25.6.71`](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=8640717&key=61f8fe84b570a713ca0a7b260a98475d68a416a9&forcebaseapk=true)。新版无法使用此方法！
 
 ---
 
-<a id="требования"></a>
-## 📋 **Требования**  
-- Magisk: на вашем устройстве должен быть установлен Magisk.
-- Root-права: для использования данного метода требуются root-права.  
-- WhatsApp: версия WhatsApp должна быть не выше 2.25.6.71.
-    - НЕОБХОДИМО загрузить себе на устройство данную версию WhatsApp: [`WhatsApp Messenger 2.25.6.71`](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=8640717&key=61f8fe84b570a713ca0a7b260a98475d68a416a9&forcebaseapk=true). С БОЛЕЕ НОВЫМИ ВЕРСИЯМИ ДАННЫЙ МЕТОД РАБОТАТЬ НЕ БУДЕТ!
+<a id="安装"></a>
+## ⚙️ **安装**  
+<a id="修改Magisk设置"></a>
+### 1.1 修改Magisk设置
+   - 打开Magisk Manager
+   - 进入"设置"，禁用"Zygisk"和"DenyList"
+   - 打开"配置DenyList"，勾选Google Play服务应用，点击应用图标并启用所有开关。对WhatsApp应用执行相同操作
+   - 返回"设置"并点击"隐藏Magisk应用"。将应用名称改为除"Magisk"外的任意名称
 
----
-
-<a id="установка"></a>
-## ⚙️ **Установка**  
-<a id="изменение-настроек-magisk"></a>
-### 1.1 Изменение настроек Magisk
-   - Откройте Magisk Manager
-   - Перейдите в «Настройки», отключите «Zygisk» и «DenyList»
-   - Откройте «Настройка DenyList», выделите галочкой приложение Сервисы Google Play, нажмите на иконку этого приложения и включите все переключатели. То же самое сделайте с приложением WhatsApp.
-   - Вернитесь в «Настройки» и нажмите на «Скрытие приложения Magisk». Измените название приложения на любое, кроме «Magisk»
-
-<a id="установка-модулей"></a>
-### 1.2 Установка модулей
-   - Загрузите себе на устройство следующие модули: 
+<a id="安装模块"></a>
+### 1.2 安装模块
+   - 下载以下模块到您的设备： 
      - [`Zygisk Next`](https://github.com/Dr-TSNG/ZygiskNext/releases)
      - [`LSPosed v1.10.1`](https://github.com/JingMatrix/LSPosed/releases)
      - [`Play Integrity Fix`](https://mmrl.dev/repository/aptoftisk/playintegrityfix)
      - [`TrickyStore`](https://github.com/5ec1cff/TrickyStore/releases)
      - [`TrickyAddon`](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/tag/v3.9)
      - [`Shamiko`](https://github.com/LSPosed/LSPosed.github.io/releases)
-   - Вернитесь на главную страницу Magisk Manager
-   - Перейдите в раздел «Модули» и выберите «Установить из хранилища»
-   - Выберите и установите загруженные модули
-   - После успешной установки всех модулей перезагрузите устройство
+   - 返回Magisk Manager主页面
+   - 进入"模块"部分并选择"从存储安装"
+   - 选择并安装下载的模块
+   - 所有模块成功安装后重启设备
 
 ---
 
-<a id="настройка"></a>
-## ⚙️ **Настройка**  
-<a id="настройка-модулей"></a>
-### 2.1 Настройка модулей
-   - После перезагрузки откройте Magisk Manager
-   - Перейдите в раздел «Модули»
-   - Найдите модуль «Play Integrity Fix» и нажмите кнопку «Action» под модулем. Дождитесь завершения процесса, затем нажмите «Close» в правом нижнем углу
-   - Найдите модуль «Tricky Store» и нажмите кнопку «Action» под модулем. Дождитесь загрузки WebUI и предоставьте приложению root-доступ
-   - В открывшемся приложении откройте меню (три точки в правом верхнем углу) и выберите «Выбрать все», затем нажмите синюю кнопку «Сохранить»
-   - Снова откройте меню и выберите «Установить Security Patch»
-   - В открывшемся окне:
-     - Активируйте «Расширенный режим»
-     - В поле «System» введите «prop»
-     - В поле «Boot» введите дату «2025-05-05»
-     - В поле «Vendor» введите дату «2025-05-05»
-     - Нажмите кнопку «Сохранить»
-   - Загрузите файл: [`keybox.zip`](https://github.com/user-attachments/files/20700522/keybox.zip) и распакуйте его содержимое
-   - В приложении Tricky Addon откройте меню и выберите «Установить пользовательский Keybox», затем выберите файл «keybox.xml»
+<a id="配置"></a>
+## ⚙️ **配置**  
+<a id="模块配置"></a>
+### 2.1 模块配置
+   - 重启后打开Magisk Manager
+   - 进入"模块"部分
+   - 找到"Play Integrity Fix"模块并点击模块下的"Action"按钮。等待过程完成，然后点击右下角的"Close"
+   - 找到"Tricky Store"模块并点击模块下的"Action"按钮。等待WebUI加载并授予应用root权限
+   - 在打开的应用中打开菜单(右上角三点)并选择"全选"，然后点击蓝色"保存"按钮
+   - 再次打开菜单并选择"安装安全补丁"
+   - 在打开的窗口中：
+     - 启用"高级模式"
+     - 在"System"字段输入"prop"
+     - 在"Boot"字段输入日期"2025-05-05"
+     - 在"Vendor"字段输入日期"2025-05-05"
+     - 点击"保存"按钮
+   - 下载文件：[`keybox.zip`](https://github.com/user-attachments/files/20700522/keybox.zip)并解压其内容
+   - 在Tricky Addon应用中打开菜单并选择"安装自定义Keybox"，然后选择文件"keybox.xml"
 
-<a id="настройка-приложений"></a>
-### 2.2 Настройка приложений
-   - Загрузите на устройство файл: [treble_arm64_bgN-KeyAttestation.zip](https://github.com/user-attachments/files/20734091/treble_arm64_bgN-KeyAttestation.zip)
-   - Распакуйте содержимое архива в любую папку
-   - Установите приложение: [Key Attestation](https://github.com/vvb2060/KeyAttestation/releases)
-   - В приложении Key Attestation:
-     1. Откройте меню (три точки в правом верхнем углу)
-     2. Выберите «Load from file»
-     3. Укажите распакованный файл «treble_arm64_bgN-KeyAttestation.p7b»
-   - Установите [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)
-   - Запустите проверку (кнопка «CHECK»)
+<a id="应用配置"></a>
+### 2.2 应用配置
+   - 下载文件到设备：[treble_arm64_bgN-KeyAttestation.zip](https://github.com/user-attachments/files/20734091/treble_arm64_bgN-KeyAttestation.zip)
+   - 将存档内容解压到任意文件夹
+   - 安装应用：[Key Attestation](https://github.com/vvb2060/KeyAttestation/releases)
+   - 在Key Attestation应用中：
+     1. 打开菜单(右上角三点)
+     2. 选择"从文件加载"
+     3. 指定解压后的文件"treble_arm64_bgN-KeyAttestation.p7b"
+   - 安装[Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck)
+   - 运行检查("CHECK"按钮)
 
-   **Ожидаемый результат:**
+   **预期结果：**
    ✅ MEETS_BASIC_INTEGRITY  
    ✅ MEETS_DEVICE_INTEGRITY  
    ✅ MEETS_STRONG_INTEGRITY  
 
 ---
 
-<a id="ограничения"></a>
-## ⚠️ **Ограничения метода**  
-1. **Обновление WhatsApp**:
-   - Вы можете обновлять WhatsApp до последней версии, но:
-   - При попытке добавить новый аккаунт появится ошибка проверки
-   - Решение: необходимо снова установить версию 2.25.6.71
+<a id="方法限制"></a>
+## ⚠️ **方法限制**  
+1. **WhatsApp更新**：
+   - 您可以更新WhatsApp到最新版本，但：
+   - 尝试添加新账号时会出现验证错误
+   - 解决方案：需要重新安装2.25.6.71版本
 
-2. **Выход из аккаунта**:
-   - Если вы выйдете из текущего аккаунта:
-   - WhatsApp начнет проверять целостность системы заново
-   - Потребуется снова откатить версию до 2.25.6.71
+2. **退出账号**：
+   - 如果您退出当前账号：
+   - WhatsApp将重新检查系统完整性
+   - 需要将版本回退到2.25.6.71
 
-3. **Рекомендации**:
-   - Не выходите из аккаунта без необходимости
-   - Сохраните APK нужной версии (2.25.6.71) на случай сбоев
-   - Отключите автоматические обновления в Play Маркет
+3. **建议**：
+   - 非必要不要退出账号
+   - 保存所需版本(2.25.6.71)的APK以防故障
+   - 在Play商店中禁用自动更新
 
-4. **Важно**:
+4. **重要**：
    ```diff
-   + Метод работает ТОЛЬКО с версией 2.25.6.71
-   - Новые версии WhatsApp обнаруживают обход проверки
+   + 此方法仅适用于2.25.6.71版本
+   - 新版WhatsApp会检测绕过行为
